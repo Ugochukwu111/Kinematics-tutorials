@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+   /* ==== Light mode colors ==== */
+  --primary-blue: #1E3A8A; /* Deep Blue - Trust & Knowledge */
+  --accent-cyan: #38BDF8; /* Bright Cyan - Fresh & Energetic */
+  --highlight-yellow: #FACC15; /* Vibrant Yellow - Attention & Contrast */
+  --background-gray: #F3F4F6; /* Soft Gray - Clean Background */
+  --text-dark-gray: #374151; /* Dark Gray - Readable Text */
+
+
+  /* ==== dark mode colors ==== */
+
+  --primary-blue-dark: #172554; /* Darker shade of Deep Blue */
+  --accent-cyan-dark: #0E7490; /* Muted Cyan */
+  --highlight-yellow-dark: #EAB308; /* Slightly deeper yellow */
+  --background-dark: #1E1E1E; /* Dark background */
+  --text-light-gray: #E5E7EB; /* Light gray text */
+  --text-white: #FFFFFF; /
+}
+
+body {
+  background-color: var(--background-gray);
+  color: var(--text-dark-gray);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+h1 {
+  color: var(--primary-blue);
+}
+h2 {
+  font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+}
+
+h5 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* Paragraphs & Body Text */
+p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: .7em .1.2em;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--highlight-yellow);
+  color: var(--text-dark-gray);
+}
+
+button:hover {
+  background-color: var(--accent-cyan);
+  color: white;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ==== text positioning utilities ==== */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ==== flex layout utilities ==== */
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ==== Grid layout utilities ==== */
+.grid-center{
+  display: grid;
+  place-items: center;
+}
