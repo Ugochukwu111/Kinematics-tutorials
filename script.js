@@ -10,7 +10,7 @@ showSidebarBtn.addEventListener('click', () => {
     isSideBarOpen = false;
     // showSidebarBtn.setAttribute("aria-expanded", false);
   }else{
-    sideBar.style.transform = 'translateX(0%)';
+    sideBar.style.transform = 'translateX( 0%)';
     showSidebarBtn.style.backgroundImage = 'url(icons/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg)' ;
     isSideBarOpen = true;
   //   showSidebarBtn.setAttribute("aria-expanded", true);
