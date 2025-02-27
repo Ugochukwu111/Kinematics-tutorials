@@ -18,16 +18,31 @@
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   <link rel="icon" href="icons/favicon-32x32.png" type="image/x-icon">
   
   <title>Kinematics Tutorial</title>
 </head>
 <body>
   
-  <header>
-    <nav>
-      <h1>Kinematics Tutorial</h1>
-      <ul>
+  <header >
+    
+    <nav class="flex vertical-center">
+      <h1 class="logo-ff">Kinematics Tutorials</h1>
+      <button class="mobile-menu-show-siderbar ">
+      </button>
+      <!-- Desktop navigations -->
+      <ul class="flex desktop-navigations">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+ <!-- Desktop navigations -->
+      <ul class="flex side-bar">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
@@ -36,9 +51,20 @@
   </header>
 
   <main>
-    <section>
-      <h2>Welcome to Kinematics</h2>
-      <p>Learn all about motion, velocity, and acceleration.</p>
+    <section class="section-1">
+      <h2 class="text-center">
+        Welcome to Kinematics
+      </h2>
+      <p class="text-center">
+        Learn all about motion, velocity, and acceleration.
+      </p>
+      <div class="grid-center MT">
+        <button class="bg-primary-dark text-white flex-center">
+          Locate Us
+           &nbsp; &nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+        </button>
+      </div>
+     
     </section>
   </main>
 
