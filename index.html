@@ -45,14 +45,32 @@
       <ul class="flex desktop-navigations">
       
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">Abouts</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#">More ▼</a>
+          <ul class="dropdown-menu">
+              <li><a href="#founders">Founders</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#student">Students</a></li>
+              <li><a href="#comments">Comments</a></li>
+          </ul>
+      </li>
       </ul>
  <!-- Mobile navigations -->
       <ul class="flex side-bar">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#">More ▼</a>
+          <ul class="dropdown-menu">
+              <li><a href="#founders">Founders</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#student">Students</a></li>
+              <li><a href="#comments">Comments</a></li>
+          </ul>
+      </li>
       </ul>
     </nav>
   </header>
@@ -71,10 +89,12 @@
         <!-- Join us for an interactive learning experience where you’ll gain a deeper understanding of motion, velocity, acceleration, and more. Don’t miss this opportunity to enhance your physics knowledge ! -->
       </p>
       <div class="grid-center MT">
+        <a target="_blank" href="https://maps.app.goo.gl/77b3dCu8KNNg5w2a6">
         <button class="logo-bkg-clr text-white flex-center">
-          Locate Us
+          locate Us 
            &nbsp; &nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
         </button>
+      </a>
       </div>
      
     </section>
@@ -82,8 +102,8 @@
 
 
         <!--  ========== abou us section ============= -->
-  <section class="">
-    <h2 class="text-center MB">
+  <section id="about" class="">
+    <h2 class="text-center MB zindex">
       About Us
     </h2>
     <div class="flex flex-center about-us-section">
@@ -99,8 +119,8 @@
 
         <!--  ============ couses offered section =========== -->
 
-  <section>
-      <h3 class="text-center MB">
+  <section id="schedule">
+      <h3 class="text-center MB zindex">
         Courses
       </h3>
       <div class="flex space-evenly">
@@ -120,8 +140,8 @@
 
    <!--  ============ schedule section =========== -->
   <section class="flex space-between Schedule-section">
-      <h3>
-        Schedule & Location
+      <h3 class="zindex">
+        Schedules
        </h3>
 
     <div>
@@ -135,10 +155,12 @@
       </p>
     </div>
   </section>
+ 
 
-  <section>
-    <h4 class="text-center">
-      What The Students Say About Us
+  <!-- ========= STUDENT COMMENT SECTION ========= -->
+  <section id="comments">
+    <h4 class="text-center zindex">
+      Comments
     </h4>
 
     <div class="comment-grid-coontainer">
@@ -248,8 +270,9 @@
     </div>
   </section>
 
-  <section>
-    <h5 class = "text-center">>Contact & Support</h5><br>
+  <!-- ====CONTACT SECTION ===== -->
+  <section id="contact">
+    <h5 class = "text-center zindex">>Contact</h5><br>
     <p class = "text-center fwb"> Have any questions? Need more details? Feel free to reach out!</p>
     <p class = "text-center fwb">- **Email:** [Insert Contact Email]</p>
     <p class = "text-center fwb">- **Phone:** [Insert Contact Number]</p>
@@ -262,8 +285,8 @@
     </div>
   </section>
 
-  <section class="founder-section">
-    <h5 class="text-center  MB">Founders</h5>
+  <section class="founder-section " id="founders">
+    <h5 class="text-center  MB zindex">Founders</h5>
 
     <div class="MT founder-container flex space-evenly">
     <div class=" flex-center MB MT founder-box">
@@ -294,7 +317,7 @@
      <p class="MT text-right">@Kinematics</p>
   </section>
 
-  <footer>
+  <footer id="student">
     <div class="flex space-between coloumn">
       <div>
         <p  class="MB"><span class="logo-clr fwb">KINEMATICS</span> TUTORIALS</p>
@@ -307,7 +330,7 @@
 
         <div>
           <p class="fwb">STUDENT</p>
-          <p><a href="">Students Comments</a></p>
+          <p><a href="#comments">Students Comments</a></p>
           <p><a href="">Students Results</a></p>
           <p><a href="">Register A Student</a></p>
         </div>

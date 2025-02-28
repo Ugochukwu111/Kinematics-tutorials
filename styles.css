@@ -22,6 +22,10 @@
   --white-dark: #B0B0B0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--white-light);
   color: var(--black-primary);
@@ -37,13 +41,31 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--black-medium);
 }
 
+/* positon is there so index can work
+   the blur desktop nav blur covers the h1,h2,h3, when i click them so 
+   i have to index them
+   i later change thw with to fit content because the width was default 100%
+   which now covers my desktop navigations because of the relative set on it 
+   makking me unable to click my desk top links,
+    width: fit-content;
+  margin-inline: auto;
+  now fixes the issue
+ */
+.zindex{
+  z-index: 2000; 
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+}
 
 h2 {
   font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+ 
 }
 
 h3 {
   font-size: clamp(1.5rem, 4vw, 2rem);
+  z-index: 20000;
 }
 
 h4 {
@@ -173,6 +195,32 @@ header{
   background-color: var(--white-dark);
   
 }
+.dropdown{
+  position: relative;
+  
+}
+
+.dropdown-menu{
+  visibility: hidden;
+  pointer-events: none;
+  /* flex-direction: co; */
+  border-radius: 1rem;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  background-color: var(--white-primary);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.dropdown:hover .dropdown-menu{
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+
+}
 
 .section-1{
   background-color: var(--white-medium);
@@ -180,7 +228,7 @@ header{
    display: flex;
  flex-direction: column;
   justify-content: space-around;
-  
+  z-index: 999;
 }
 
 header nav {
@@ -227,7 +275,7 @@ header ul {
   color: white;
   padding-top: 60px; 
   transition: all 350ms ease-in-out;
-  z-index: 1000;
+  z-index: 3000;
 }
 
 .about-us-section-img-container{
@@ -388,9 +436,14 @@ footer{
 
 
 @media (max-width: 40rem) {
+  /* so index is placed to that my h2,3,4 dont show on mobile */
+header nav{
+ z-index: 2500;
+}
 /* this is the hambygger menu btn */
   .mobile-menu-show-siderbar{
     display: flex;
+    z-index: 3500;
   }
 
   .desktop-navigations{

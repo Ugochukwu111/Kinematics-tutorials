@@ -3,7 +3,7 @@ let sideBar = document.querySelector('.side-bar')// this is the actual side bar 
 
 let isSideBarOpen = false; //flag that allows me toggle between show and hide side bar
 
-showSidebarBtn.addEventListener('click', () => {
+function toggleSidebar(){
   if(isSideBarOpen){
     sideBar.style. transform = 'translateX(100%)' ;
     showSidebarBtn.style.backgroundImage = 'url(icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg)' ;
@@ -15,7 +15,18 @@ showSidebarBtn.addEventListener('click', () => {
     isSideBarOpen = true;
   //   showSidebarBtn.setAttribute("aria-expanded", true);
   }
-})
+}
+
+showSidebarBtn.addEventListener("click", (event) => {
+  event.stopPropagation(); // Prevents click from propagating to document
+  toggleSidebar();
+});
+
+document.addEventListener("click", (event) => {
+  if (isSideBarOpen && !sideBar.contains(event.target) && event.target !== showSidebarBtn) {
+    toggleSidebar();
+  }
+});
 
 
 // this array contains major courses that 100lvl students offers in uniben
