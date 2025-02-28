@@ -1,5 +1,5 @@
 let showSidebarBtn = document.querySelector('.mobile-menu-show-siderbar') //button that controls the sideBar
-let sideBar = document.querySelector('.side-bar')// the actual side bar box
+let sideBar = document.querySelector('.side-bar')// this is the actual side bar box
 
 let isSideBarOpen = false; //flag that allows me toggle between show and hide side bar
 
