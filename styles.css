@@ -171,10 +171,16 @@ section{
 
 header{
   background-color: var(--white-dark);
+  
 }
 
-main{
+.section-1{
   background-color: var(--white-medium);
+  min-height: 100svh;
+   display: flex;
+ flex-direction: column;
+  justify-content: space-around;
+  
 }
 
 header nav {
@@ -217,17 +223,11 @@ header ul {
   transform: translateX(100%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
    background-color: var(--white-light);
-   height: 100svh;
+   min-height: 100svh;
   color: white;
   padding-top: 60px; 
   transition: all 350ms ease-in-out;
   z-index: 1000;
-}
-
-
-.section-1{
-  background-color: var(--highlight-yellow);
-  padding: 3em 0;
 }
 
 .about-us-section-img-container{
@@ -245,6 +245,22 @@ header ul {
   border-radius: 2rem;
   /* border: 1px solid var(--black-primary); */
   box-shadow: -5px -5px 5px var(--white-dark);
+}
+
+.select-lvl-course{
+  padding: .6em 1em;
+  background-color: var(--black-medium);
+  color: var(--white-light);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.select-lvl-course:hover{
+  opacity: .8;
+}
+.select-lvl-course:active{
+  opacity: .6;
 }
 
 .Schedule-section{
