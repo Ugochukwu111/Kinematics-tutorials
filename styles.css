@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +44,25 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--black-medium);
 }
 
+
+
+.block{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 0 cover 40%;
+}
+
+@keyframes appear{
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 /* positon is there so index can work
    the blur desktop nav blur covers the h1,h2,h3, when i click them so 
    i have to index them
@@ -65,7 +87,6 @@ h2 {
 
 h3 {
   font-size: clamp(1.5rem, 4vw, 2rem);
-  z-index: 20000;
 }
 
 h4 {
@@ -195,6 +216,51 @@ header{
   background-color: var(--white-dark);
   
 }
+
+.Welcome-text{
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 1.5s ease-out forwards 0.3s;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-description {
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #555;
+  margin-inline: auto;
+  max-width: 45rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 1.5s ease-out forwards 0.5s;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .dropdown{
   position: relative;
   
@@ -221,6 +287,8 @@ header{
   transform: translateY(0);
 
 }
+
+
 
 .section-1{
   background-color: var(--white-medium);
@@ -491,6 +559,12 @@ header nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range:entry 0 cover 50%;
   }
 
 }
