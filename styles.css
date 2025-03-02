@@ -155,6 +155,11 @@ section{
 
   /* =====  UTILITIES ===== */
 
+  
+.txt-shadow{
+  text-shadow: -3px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .fwb{
   font-weight: bold;
 }
@@ -240,7 +245,7 @@ header{
   font-family: "Josefin Sans", serif;
   font-weight: 700;
   font-size: 1.2rem;
-  color: #555;
+  color: white;
   margin-inline: auto;
   max-width: 45rem;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
@@ -249,6 +254,7 @@ header{
   transform: translateY(20px);
   animation: fadeSlide 1.5s ease-out forwards 0.5s;
 }
+
 
 @keyframes fadeSlide {
   from {
@@ -294,6 +300,9 @@ header{
   background-color: var(--white-medium);
   min-height: 100svh;
    display: flex;
+   background-image: url(images/bkg.jpg);
+   background-position: center;
+   background-size: cover;
  flex-direction: column;
   justify-content: space-around;
   z-index: 999;
@@ -361,6 +370,7 @@ header ul {
   border-radius: 2rem;
   /* border: 1px solid var(--black-primary); */
   box-shadow: -5px -5px 5px var(--white-dark);
+  animation: glow 1.5s infinite alternate;
 }
 
 .select-lvl-course{
