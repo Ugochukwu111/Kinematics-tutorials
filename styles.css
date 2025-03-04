@@ -25,6 +25,10 @@
   --white-dark: #B0B0B0;
 }
 
+.clr-white-pry{
+  color: var(--white-primary);
+}
+
 html{
   scroll-behavior: smooth;
   background-color: #0057b36b;
@@ -140,6 +144,25 @@ a{
 
  a:hover,
  a:focus{
+  border-bottom: 1px solid var(--white-primary);
+  color: var(--white-primary);
+
+}
+
+
+footer a:hover{
+color: var(--black-primary);
+}
+
+footer a:hover{
+  border-bottom: 1px solid var(--black-primary);
+}
+
+.dropdown-menu li a{
+  color: var(--black-primary);
+}
+
+.dropdown-menu li a:hover{
   border-bottom: 1px solid var(--black-primary);
 }
 
@@ -254,6 +277,11 @@ header{
   text-align: center;
   opacity: 0;
   transform: translateY(20px);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: .5em 1.2em;
+  border-radius: 2rem;
+  backdrop-filter: blur(10px); /* Blurred background effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   animation: fadeSlide 1.5s ease-out forwards 0.5s;
 }
 
