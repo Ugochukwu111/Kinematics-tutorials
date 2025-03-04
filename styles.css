@@ -27,8 +27,7 @@
 
 html{
   scroll-behavior: smooth;
-  background-color: #0056b3;
-  width: fit-content;
+  background-color: #0057b36b;
 }
 
 body {
@@ -451,7 +450,8 @@ header ul {
 
 
 .contact-illustration{
-  width: 20rem;
+  width: clamp(200px, 50vw, 500px); 
+  height: auto;
   transform: rotateZ(20deg)
 }
 
