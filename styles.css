@@ -352,7 +352,7 @@ header ul {
   transform: translateX(100%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
    background-color: var(--white-light);
-   min-height: 100svh;
+  height: 120svh;
   color: white;
   padding-top: 60px; 
   transition: all 350ms ease-in-out;
@@ -453,7 +453,7 @@ header ul {
 
 .contact-illustration{
   width: 20rem;
-  transform: rotateZ(20deg);
+  transform: rotateZ(20deg)
 }
 
 .contact-us-icon-box{
