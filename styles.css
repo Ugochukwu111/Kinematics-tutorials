@@ -27,6 +27,8 @@
 
 html{
   scroll-behavior: smooth;
+  background-color: #0056b3;
+  width: fit-content;
 }
 
 body {
@@ -299,14 +301,15 @@ header{
 
 .section-1{
   background-color: var(--white-medium);
-  min-height: 100svh;
+   min-height: 100svh; 
    display: flex;
+   border: 1px solid red;
    background-image: url(images/bkg.jpg);
    background-position: center;
    background-size: cover;
- flex-direction: column;
-  justify-content: space-around;
-  z-index: 999;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 100%;
 }
 
 header nav {
@@ -451,7 +454,6 @@ header ul {
 .contact-illustration{
   width: 20rem;
   transform: rotateZ(20deg);
-  z-index: -1;
 }
 
 .contact-us-icon-box{
@@ -543,7 +545,7 @@ footer{
 }
 
 
-@media (max-width: 40rem) {
+@media (max-width: 40rem ), (max-height: 25rem) {
   /* so index is placed to that my h2,3,4 dont show on mobile */
 header nav{
  z-index: 2500;
@@ -552,6 +554,10 @@ header nav{
   .mobile-menu-show-siderbar{
     display: flex;
     z-index: 3500;
+  }
+
+  .side-bar{
+    overflow-y: auto;
   }
 
   .desktop-navigations{
