@@ -34,6 +34,7 @@ body {
   color: var(--black-primary);
   line-height: 1.6;
   font-family: 'Inter', sans-serif;
+  min-height: 100svh;
   /* overflow: hidden; */
 }
 
