@@ -303,7 +303,6 @@ header{
   background-color: var(--white-medium);
    min-height: 100svh; 
    display: flex;
-   border: 1px solid red;
    background-image: url(images/bkg.jpg);
    background-position: center;
    background-size: cover;
