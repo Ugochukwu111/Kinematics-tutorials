@@ -123,6 +123,7 @@ button {
   background-color: var(--black-dark);
   color: var(--white-medium);
   text-transform: uppercase;
+
 }
 
 button:hover {
@@ -144,8 +145,7 @@ a{
 
  a:hover,
  a:focus{
-  border-bottom: 1px solid var(--white-primary);
-  color: var(--white-primary);
+  border-bottom: 1px solid var(--black-primary);
 
 }
 
@@ -330,7 +330,7 @@ header{
   background-color: var(--white-medium);
    min-height: 100svh; 
    display: flex;
-   background-image: url(images/bkg.jpg);
+   background-image: url(images/herosection.jpg);
    background-position: center;
    background-size: cover;
    flex-direction: column;
@@ -401,15 +401,6 @@ header ul {
   /* border: 1px solid var(--black-primary); */
   box-shadow: -5px -5px 5px var(--white-dark);
   animation: glow 1.5s infinite alternate;
-}
-
-.select-lvl-course{
-  padding: .6em 1em;
-  background-color: var(--black-medium);
-  color: var(--white-light);
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: all 250ms ease;
 }
 
 .select-lvl-course:hover{
