@@ -32,11 +32,11 @@ document.addEventListener("click", (event) => {
 // this array contains major courses that 100lvl students offers in uniben
 // --that kinematics teaches
 let hundredLVLCourseLIst =[
-  '**100_Course__1**',
-  '**100_Course__2**',
-  '**100_Course__3**',
-  '**100_Course__4**',
-  '**100_Course__5**'
+  '**MTH101**',
+  '**MTH102**',
+  '**MTH103**',
+  '**MTH104**',
+  '**PHY101**'
 ];
 
 let html100lvlCourseList = [];
@@ -44,11 +44,11 @@ let html100lvlCourseList = [];
 // this array contains major courses that 200lvl students offers in uniben
 // --that kinematics teaches
 const twoHundredLVLCourseLIst =[
-  '**200_Course__1**',
-  '**200_Course__2**',
-  '**200_Course__3**',
-  '**200_Course__4**',
-  '**200_Course__5**'
+  '**MTH 201**',
+  '**PHY 213**',
+  '**MTH 204**',
+  '**MTH 217**',
+  '**STA 211**'
 ];
 
 let html200lvlCourseList = [];
